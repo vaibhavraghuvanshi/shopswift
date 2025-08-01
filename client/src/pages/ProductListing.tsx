@@ -128,15 +128,15 @@ export default function ProductListing({ searchQuery }: ProductListingProps) {
       </Box>
 
       <Grid container spacing={4}>
-        {/* Filters Sidebar */}
+        {/* Filters Sidebar - 30% width */}
         {!isMobile && (
-          <Grid item lg={3}>
+          <Grid size={{ xs: 12, lg: 3.6 }}>
             <FilterSidebar filters={filters} onFiltersChange={handleFiltersChange} />
           </Grid>
         )}
 
-        {/* Main Content */}
-        <Grid item xs={12} lg={9}>
+        {/* Main Content - 70% width */}
+        <Grid size={{ xs: 12, lg: isMobile ? 12 : 8.4 }}>
           {/* Sort and View Options */}
           <Box
             display="flex"

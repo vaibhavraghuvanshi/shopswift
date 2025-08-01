@@ -60,6 +60,15 @@
     "ratingSort": "Calificación del Cliente",
     "newest": "Más Reciente"
   },
+  "categories": {
+    "Electronics": "Electrónicos",
+    "Clothing": "Ropa", 
+    "Shoes": "Zapatos",
+    "Beauty": "Belleza",
+    "Sports": "Deportes",
+    "Accessories": "Accesorios",
+    "Furniture": "Muebles"
+  },
   "notifications": {
     "addedToCart": "¡Producto añadido al carrito exitosamente!",
     "removedFromCart": "Producto eliminado del carrito",

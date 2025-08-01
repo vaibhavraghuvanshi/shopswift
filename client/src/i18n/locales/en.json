@@ -60,6 +60,15 @@
     "ratingSort": "Customer Rating",
     "newest": "Newest"
   },
+  "categories": {
+    "Electronics": "Electronics",
+    "Clothing": "Clothing", 
+    "Shoes": "Shoes",
+    "Beauty": "Beauty",
+    "Sports": "Sports",
+    "Accessories": "Accessories",
+    "Furniture": "Furniture"
+  },
   "notifications": {
     "addedToCart": "Product added to cart successfully!",
     "removedFromCart": "Product removed from cart",

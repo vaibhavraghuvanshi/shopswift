@@ -60,6 +60,15 @@
     "ratingSort": "تقييم العملاء",
     "newest": "الأحدث"
   },
+  "categories": {
+    "Electronics": "الإلكترونيات",
+    "Clothing": "الملابس", 
+    "Shoes": "الأحذية",
+    "Beauty": "التجميل",
+    "Sports": "الرياضة",
+    "Accessories": "الإكسسوارات",
+    "Furniture": "الأثاث"
+  },
   "notifications": {
     "addedToCart": "تم إضافة المنتج إلى السلة بنجاح!",
     "removedFromCart": "تم إزالة المنتج من السلة",

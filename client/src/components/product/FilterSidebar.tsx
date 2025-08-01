@@ -83,7 +83,7 @@ export default function FilterSidebar({ filters, onFiltersChange }: FilterSideba
                   size="small"
                 />
               }
-              label={category}
+              label={t(`categories.${category}`)}
             />
           ))}
         </FormGroup>

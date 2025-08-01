@@ -17,7 +17,8 @@ export interface PaginationState {
 export const CATEGORIES = [
   'Electronics',
   'Clothing',
-  'Home & Garden',
+  'Shoes',
+  'Beauty',
   'Sports',
   'Accessories',
   'Furniture',

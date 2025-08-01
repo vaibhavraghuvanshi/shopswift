@@ -1,5 +1,7 @@
 import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
+import { isRTL, getDirection } from '@/i18n';
 
 interface ThemeContextType {
   isDarkMode: boolean;
@@ -22,6 +24,7 @@ interface ThemeRegistryProps {
 
 export default function ThemeRegistry({ children }: ThemeRegistryProps) {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -32,6 +35,13 @@ export default function ThemeRegistry({ children }: ThemeRegistryProps) {
     }
   }, []);
 
+  // Update document direction when language changes
+  useEffect(() => {
+    const direction = getDirection(i18n.language);
+    document.documentElement.dir = direction;
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
+
   const toggleTheme = () => {
     const newMode = !isDarkMode;
     setIsDarkMode(newMode);
@@ -39,6 +49,7 @@ export default function ThemeRegistry({ children }: ThemeRegistryProps) {
   };
 
   const theme = createTheme({
+    direction: getDirection(i18n.language),
     palette: {
       mode: isDarkMode ? 'dark' : 'light',
       primary: {
@@ -57,7 +68,9 @@ export default function ThemeRegistry({ children }: ThemeRegistryProps) {
       },
     },
     typography: {
-      fontFamily: 'Roboto, Arial, sans-serif',
+      fontFamily: isRTL(i18n.language) 
+        ? 'Cairo, Tahoma, Arial, sans-serif' 
+        : 'Roboto, Arial, sans-serif',
     },
     shape: {
       borderRadius: 8,
@@ -76,6 +89,13 @@ export default function ThemeRegistry({ children }: ThemeRegistryProps) {
           root: {
             borderRadius: 12,
             boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+          },
+        },
+      },
+      MuiCssBaseline: {
+        styleOverrides: {
+          body: {
+            direction: getDirection(i18n.language),
           },
         },
       },

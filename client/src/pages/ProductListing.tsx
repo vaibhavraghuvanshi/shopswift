@@ -166,11 +166,21 @@ export default function ProductListing({ searchQuery }: ProductListingProps) {
                     })
                   }
                 >
-                  {SORT_OPTIONS.map((option) => (
-                    <MenuItem key={option.value} value={option.value}>
-                      {t('filters.sortBy')}: {option.label}
-                    </MenuItem>
-                  ))}
+                  <MenuItem value="featured">
+                    {t('filters.sortBy')}: {t('filters.featured')}
+                  </MenuItem>
+                  <MenuItem value="price-asc">
+                    {t('filters.sortBy')}: {t('filters.priceAsc')}
+                  </MenuItem>
+                  <MenuItem value="price-desc">
+                    {t('filters.sortBy')}: {t('filters.priceDesc')}
+                  </MenuItem>
+                  <MenuItem value="rating">
+                    {t('filters.sortBy')}: {t('filters.ratingSort')}
+                  </MenuItem>
+                  <MenuItem value="newest">
+                    {t('filters.sortBy')}: {t('filters.newest')}
+                  </MenuItem>
                 </Select>
               </FormControl>
 

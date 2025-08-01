@@ -53,7 +53,12 @@
     "rating": "Rating",
     "clearAll": "Clear All Filters",
     "sortBy": "Sort by",
-    "showing": "Showing {{start}}-{{end}} of {{total}} results"
+    "showing": "Showing {{start}}-{{end}} of {{total}} results",
+    "featured": "Featured",
+    "priceAsc": "Price: Low to High",
+    "priceDesc": "Price: High to Low",
+    "ratingSort": "Customer Rating",
+    "newest": "Newest"
   },
   "notifications": {
     "addedToCart": "Product added to cart successfully!",

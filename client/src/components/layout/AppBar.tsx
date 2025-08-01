@@ -89,7 +89,18 @@ export default function AppBar({ onSearchChange, searchQuery = '' }: AppBarProps
   const favoritesCount = favoriteItems.length;
 
   const toggleLanguage = () => {
-    const newLang = i18n.language === 'en' ? 'es' : 'en';
+    const currentLang = i18n.language;
+    let newLang;
+    
+    // Cycle through languages: en -> es -> ar -> en
+    if (currentLang === 'en') {
+      newLang = 'es';
+    } else if (currentLang === 'es') {
+      newLang = 'ar';
+    } else {
+      newLang = 'en';
+    }
+    
     i18n.changeLanguage(newLang);
   };
 
@@ -131,7 +142,7 @@ export default function AppBar({ onSearchChange, searchQuery = '' }: AppBarProps
             onClick={toggleLanguage}
             startIcon={<Language />}
           >
-            {i18n.language.toUpperCase()}
+            {i18n.language === 'ar' ? 'عربي' : i18n.language.toUpperCase()}
           </Button>
 
           {/* Theme Toggle */}

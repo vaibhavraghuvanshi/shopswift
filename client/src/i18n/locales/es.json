@@ -53,7 +53,12 @@
     "rating": "Calificación",
     "clearAll": "Limpiar Todos los Filtros",
     "sortBy": "Ordenar por",
-    "showing": "Mostrando {{start}}-{{end}} de {{total}} resultados"
+    "showing": "Mostrando {{start}}-{{end}} de {{total}} resultados",
+    "featured": "Destacados",
+    "priceAsc": "Precio: Menor a Mayor",
+    "priceDesc": "Precio: Mayor a Menor",
+    "ratingSort": "Calificación del Cliente",
+    "newest": "Más Reciente"
   },
   "notifications": {
     "addedToCart": "¡Producto añadido al carrito exitosamente!",

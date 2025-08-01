@@ -15,7 +15,7 @@ Preferred communication style: Simple, everyday language.
 - **State Management**: Redux Toolkit for global state (cart and favorites)
 - **Data Fetching**: TanStack Query (React Query) for server state management and caching
 - **Styling**: Tailwind CSS with CSS custom properties for theming
-- **Internationalization**: i18next for multi-language support (English/Spanish)
+- **Internationalization**: i18next for multi-language support (English/Spanish/Arabic with RTL)
 - **Theme System**: Custom ThemeRegistry with light/dark mode support using MUI theming
 
 ## Backend Architecture
@@ -69,6 +69,7 @@ Preferred communication style: Simple, everyday language.
 - **ESBuild**: Fast JavaScript bundler for production builds
 
 ## Internationalization and Accessibility
-- **i18next**: Internationalization framework with React integration
+- **i18next**: Internationalization framework with React integration supporting English, Spanish, and Arabic
+- **RTL Support**: Right-to-left text direction for Arabic with proper font loading (Cairo) and layout mirroring
 - **Lucide React**: Consistent icon library
 - **WCAG Compliance**: Accessible components via Radix UI and Material-UI

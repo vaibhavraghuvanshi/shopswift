@@ -1,0 +1,48 @@
+Build a fully responsive e-commerce web application using Next.js v14+ with the App Router, implementing all of the following features and constraints:
+---
+### ✅ Pages to Implement:
+1. Main Page  
+   - Showcase product listings in a grid layout  
+   - Include category filters, sort options, and search  
+2. Product Details Page  
+   - Show complete product info: title, price, description, images  
+   - Add to cart / Add to favourites buttons  
+3. Favourites Page  
+   - Display saved favourite products  
+   - Allow users to remove items  
+4. Cart Page  
+   - View all cart items with quantities  
+   - Update quantity or remove products  
+   - Show total price  
+---
+### 🌐 UI/UX Requirements
+- Mobile-first and responsive across all screen sizes  
+- Dark Mode Toggle (MUI Theme-based switching)  
+- Multi-language Support: at least English & Spanish  
+- Smooth transitions / animations for modals, navigation, interactions  
+- Clean, modern, accessible UI (WCAG standards)  
+- Consistent and reusable components  
+---
+### 🧱 Tech Stack & Architecture
+- Next.js v14+ (App Router)  
+- TypeScript  
+- MUI (Material UI)  
+- Redux Toolkit for cart/favourites state management  
+- React Query (TanStack Query) for data fetching and cache  
+- i18next or next-intl for translations  
+---
+### 🛠 Backend
+- Use JSON Server to simulate a backend  
+- Implement CRUD endpoints: /products, /cart, /favourites  
+---
+### 🔧 Additional Details
+- Organize with scalable folder structure: app/, components/, hooks/, store/, styles/, types/  
+- Use layout.tsx for global layout (Theme, Providers, Language)  
+- Include necessary SEO metadata in metadata export  
+- Create a ThemeRegistry.tsx to handle light/dark mode switching  
+- Global Providers.tsx file to wrap Redux, React Query, and i18n
+---
+### ✅ Bonus Points
+- Implement toast notifications using notistack or MUI Snackbar  
+- Add loading skeletons using MUI Skeleton component  
+- Use dynamic() from Next.js for lazy loading components like modals

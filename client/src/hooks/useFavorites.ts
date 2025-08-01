@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useQuery, useMutation } from '@tanstack/react-query';
 import { useDispatch, useSelector } from 'react-redux';
 import { useSnackbar } from 'notistack';
@@ -20,10 +21,14 @@ export const useFavorites = () => {
 
   const favoritesQuery = useQuery<FavoriteWithProduct[]>({
     queryKey: ['/api/favorites'],
-    onSuccess: (data) => {
-      dispatch(setFavorites(data));
-    },
   });
+
+  // Handle successful data fetch
+  useEffect(() => {
+    if (favoritesQuery.data) {
+      dispatch(setFavorites(favoritesQuery.data));
+    }
+  }, [favoritesQuery.data, dispatch]);
 
   const addToFavoritesMutation = useMutation({
     mutationFn: async (favorite: InsertFavorite) => {

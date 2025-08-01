@@ -51,7 +51,7 @@ export default function Cart() {
 
   const handleQuantityChange = (productId: string, newQuantity: number) => {
     if (newQuantity < 1) return;
-    updateQuantity(productId, newQuantity);
+    updateQuantity({ productId, quantity: newQuantity });
   };
 
   const handleRemoveItem = (productId: string) => {
@@ -66,7 +66,7 @@ export default function Cart() {
 
       <Grid container spacing={4}>
         {/* Cart Items */}
-        <Grid item xs={12} md={8}>
+        <Grid size={{ xs: 12, md: 8 }}>
           <Box display="flex" flexDirection="column" gap={2}>
             {items.map((item) => (
               <Card key={item.id} variant="outlined">
@@ -140,14 +140,14 @@ export default function Cart() {
 
           {/* Clear Cart */}
           <Box mt={2}>
-            <Button variant="outlined" color="error" onClick={clearCart}>
+            <Button variant="outlined" color="error" onClick={() => clearCart()}>
               Clear Cart
             </Button>
           </Box>
         </Grid>
 
         {/* Order Summary */}
-        <Grid item xs={12} md={4}>
+        <Grid size={{ xs: 12, md: 4 }}>
           <Paper sx={{ p: 3, position: 'sticky', top: 100 }}>
             <Typography variant="h6" gutterBottom>
               Order Summary

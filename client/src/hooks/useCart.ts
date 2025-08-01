@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useQuery, useMutation } from '@tanstack/react-query';
 import { useDispatch, useSelector } from 'react-redux';
 import { useSnackbar } from 'notistack';
@@ -22,10 +23,14 @@ export const useCart = () => {
 
   const cartQuery = useQuery<CartItemWithProduct[]>({
     queryKey: ['/api/cart'],
-    onSuccess: (data) => {
-      dispatch(setCartItems(data));
-    },
   });
+
+  // Handle successful data fetch
+  useEffect(() => {
+    if (cartQuery.data) {
+      dispatch(setCartItems(cartQuery.data));
+    }
+  }, [cartQuery.data, dispatch]);
 
   const addToCartMutation = useMutation({
     mutationFn: async (item: InsertCartItem) => {

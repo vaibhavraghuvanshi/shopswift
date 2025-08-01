@@ -10,7 +10,7 @@ export default function LoadingSkeleton({ variant = 'product', count = 8 }: Load
     return (
       <Grid container spacing={3}>
         {Array.from({ length: count }).map((_, index) => (
-          <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+          <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={index}>
             <Card>
               <Skeleton variant="rectangular" height={200} />
               <CardContent>
@@ -49,10 +49,10 @@ export default function LoadingSkeleton({ variant = 'product', count = 8 }: Load
   if (variant === 'detail') {
     return (
       <Grid container spacing={4}>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Skeleton variant="rectangular" height={400} />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Skeleton variant="text" height={32} width="80%" />
           <Skeleton variant="text" height={24} width="60%" sx={{ mb: 2 }} />
           <Skeleton variant="text" height={20} width="100%" />

@@ -71,7 +71,7 @@ export default function ProductDetails() {
 
       <Grid container spacing={4}>
         {/* Product Images */}
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Box
             component="img"
             src={product.image}
@@ -86,7 +86,7 @@ export default function ProductDetails() {
         </Grid>
 
         {/* Product Info */}
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Box>
             {/* Badge */}
             {product.badge && (

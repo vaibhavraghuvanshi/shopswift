@@ -1,0 +1,66 @@
+{
+  "common": {
+    "search": "Buscar productos...",
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "retry": "Reintentar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior"
+  },
+  "nav": {
+    "home": "Inicio",
+    "products": "Productos",
+    "cart": "Carrito",
+    "favorites": "Favoritos",
+    "darkMode": "Modo Oscuro",
+    "lightMode": "Modo Claro"
+  },
+  "product": {
+    "addToCart": "Añadir al Carrito",
+    "addToFavorites": "Añadir a Favoritos",
+    "removeFromFavorites": "Quitar de Favoritos",
+    "price": "Precio",
+    "rating": "Calificación",
+    "reviews": "reseñas",
+    "description": "Descripción",
+    "category": "Categoría",
+    "inStock": "En Stock",
+    "outOfStock": "Agotado"
+  },
+  "cart": {
+    "title": "Carrito de Compras",
+    "empty": "Tu carrito está vacío",
+    "quantity": "Cantidad",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "checkout": "Proceder al Pago",
+    "remove": "Eliminar",
+    "update": "Actualizar"
+  },
+  "favorites": {
+    "title": "Favoritos",
+    "empty": "No has añadido ningún favorito aún"
+  },
+  "filters": {
+    "title": "Filtros",
+    "categories": "Categorías",
+    "priceRange": "Rango de Precio",
+    "rating": "Calificación",
+    "clearAll": "Limpiar Todos los Filtros",
+    "sortBy": "Ordenar por",
+    "showing": "Mostrando {{start}}-{{end}} de {{total}} resultados"
+  },
+  "notifications": {
+    "addedToCart": "¡Producto añadido al carrito exitosamente!",
+    "removedFromCart": "Producto eliminado del carrito",
+    "addedToFavorites": "¡Añadido a favoritos!",
+    "removedFromFavorites": "Eliminado de favoritos",
+    "cartUpdated": "Carrito actualizado",
+    "error": "Algo salió mal. Por favor intenta de nuevo."
+  }
+}

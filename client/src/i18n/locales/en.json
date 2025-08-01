@@ -1,0 +1,66 @@
+{
+  "common": {
+    "search": "Search products...",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "cart": "Cart",
+    "favorites": "Favorites",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode"
+  },
+  "product": {
+    "addToCart": "Add to Cart",
+    "addToFavorites": "Add to Favorites",
+    "removeFromFavorites": "Remove from Favorites",
+    "price": "Price",
+    "rating": "Rating",
+    "reviews": "reviews",
+    "description": "Description",
+    "category": "Category",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "quantity": "Quantity",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "checkout": "Proceed to Checkout",
+    "remove": "Remove",
+    "update": "Update"
+  },
+  "favorites": {
+    "title": "Favorites",
+    "empty": "You haven't added any favorites yet"
+  },
+  "filters": {
+    "title": "Filters",
+    "categories": "Categories",
+    "priceRange": "Price Range",
+    "rating": "Rating",
+    "clearAll": "Clear All Filters",
+    "sortBy": "Sort by",
+    "showing": "Showing {{start}}-{{end}} of {{total}} results"
+  },
+  "notifications": {
+    "addedToCart": "Product added to cart successfully!",
+    "removedFromCart": "Product removed from cart",
+    "addedToFavorites": "Added to favorites!",
+    "removedFromFavorites": "Removed from favorites",
+    "cartUpdated": "Cart updated",
+    "error": "Something went wrong. Please try again."
+  }
+}

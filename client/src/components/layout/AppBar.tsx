@@ -112,7 +112,7 @@ export default function AppBar({ onSearchChange, searchQuery = '' }: AppBarProps
           <Box display="flex" alignItems="center" sx={{ cursor: 'pointer' }}>
             <Store sx={{ mr: 1 }} />
             <Typography variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
-              ModernStore
+              ShopSwift
             </Typography>
           </Box>
         </Link>
